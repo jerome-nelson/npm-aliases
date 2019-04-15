@@ -3,10 +3,16 @@
 
   Commonly used npm aliases. Fork for more!
 
-## Installation
+## Installation (on POSIX Systems)
 
 ```bash
 $ source aliases.sh
+```
+
+## Installation for Command Line (on Windows)
+```bash
+reg add "HKCU\Software\Microsoft\Command Processor" /v AutoRun ^
+  /t REG_EXPAND_SZ /d <PATH-TO-FILE>\aliases.cmd" /f
 ```
 
 ## Aliases
